@@ -1,0 +1,16 @@
+﻿@using Tutorial.Web.ViewModels
+@model HomeIndexViewModel
+@{
+    ViewBag.Title = "Home Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<partial name="_StudentTable" for="Students" />
+
+@section bottom
+{
+    <div>
+        <a asp-action="Create">添加一个学生</a>
+    </div>
+}
+
